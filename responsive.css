@@ -1,0 +1,258 @@
+/* ==================== LAPTOP (992px va kichik) ==================== */
+@media (max-width: 1199px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .menu-grid,
+    .promos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    /* Mobil Navbar */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 76px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 76px);
+        background: rgba(13, 13, 13, 0.98);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        transition: left 0.35s ease;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 30px;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .nav-mobile-actions {
+        display: block;
+    }
+
+    #header-auth-btn span {
+        display: none;
+    }
+
+    #header-auth-btn {
+        padding: 10px 14px;
+    }
+
+    /* Hamburger Animatsiyasi */
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hero */
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        margin: 0 auto 30px;
+    }
+
+    .hero-buttons,
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-img-wrapper {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .card-top { left: 10px; }
+    .card-bottom { right: 10px; }
+
+    /* Menu va Promos */
+    .menu-grid,
+    .promos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About */
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-experience-badge {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==================== TABLET (768px va kichik) ==================== */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .checkout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slider-wrapper {
+        flex-direction: column;
+    }
+
+    .slider-btn {
+        display: none;
+    }
+}
+
+/* ==================== MOBILE (576px va kichik) ==================== */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding-top: 90px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-stats {
+        gap: 15px;
+    }
+
+    .stat-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .floating-card {
+        display: none;
+    }
+
+    .menu-grid,
+    .promos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product-img-box,
+    .promo-img {
+        height: 145px;
+    }
+
+    .product-body,
+    .promo-content {
+        padding: 12px;
+    }
+
+    .product-title,
+    .promo-content h3 {
+        font-size: 0.95rem;
+    }
+
+    .product-desc,
+    .promo-content p {
+        font-size: 0.78rem;
+        margin-bottom: 10px;
+    }
+
+    .product-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-drawer {
+        max-width: 100%;
+    }
+
+    .modal-content {
+        padding: 22px 18px;
+    }
+
+    #toast-container {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* ==================== KICHIK TELEFONLAR (375px va kichik) ==================== */
+@media (max-width: 375px) {
+    .menu-grid,
+    .promos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-img-box,
+    .promo-img {
+        height: 180px;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+}
